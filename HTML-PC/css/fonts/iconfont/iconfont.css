@@ -1,0 +1,447 @@
+/**
+iconfont Webfont
+*/
+@font-face {
+	font-family: 'iconfont';
+	src: url('iconfont.eot?1712139009806');
+	src: url('iconfont.eot?#iefix-1712139009806') format('embedded-opentype'),
+		url('iconfont.woff2?1712139009806') format('woff2'),
+		url('iconfont.woff?1712139009806') format('woff'),
+		url('iconfont.ttf?1712139009806') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^='iconfont-']:before,
+[class*=' iconfont-']:before {
+	font-family: 'iconfont';
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 1;
+	font-weight: normal;
+	font-style: normal;
+	speak: none;
+	text-decoration: inherit;
+	font-size: inherit;
+	text-transform: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/*
+Glyphs list
+*/
+ .iconfont-add:before {
+			content: '\ea01';
+		}
+
+		 .iconfont-address:before {
+			content: '\ea02';
+		}
+
+		 .iconfont-address2:before {
+			content: '\ea03';
+		}
+
+		 .iconfont-afternoon:before {
+			content: '\ea04';
+		}
+
+		 .iconfont-alarm-clock:before {
+			content: '\ea05';
+		}
+
+		 .iconfont-area:before {
+			content: '\ea06';
+		}
+
+		 .iconfont-bed:before {
+			content: '\ea07';
+		}
+
+		 .iconfont-body-massage:before {
+			content: '\ea08';
+		}
+
+		 .iconfont-booking:before {
+			content: '\ea09';
+		}
+
+		 .iconfont-building:before {
+			content: '\ea0a';
+		}
+
+		 .iconfont-cancel:before {
+			content: '\ea0b';
+		}
+
+		 .iconfont-cart:before {
+			content: '\ea0c';
+		}
+
+		 .iconfont-changer:before {
+			content: '\ea0d';
+		}
+
+		 .iconfont-check:before {
+			content: '\ea0e';
+		}
+
+		 .iconfont-checkmark:before {
+			content: '\ea0f';
+		}
+
+		 .iconfont-child:before {
+			content: '\ea10';
+		}
+
+		 .iconfont-clock:before {
+			content: '\ea11';
+		}
+
+		 .iconfont-close:before {
+			content: '\ea12';
+		}
+
+		 .iconfont-coffee-cup:before {
+			content: '\ea13';
+		}
+
+		 .iconfont-customer-service:before {
+			content: '\ea14';
+		}
+
+		 .iconfont-date:before {
+			content: '\ea15';
+		}
+
+		 .iconfont-Dawn:before {
+			content: '\ea16';
+		}
+
+		 .iconfont-dinner:before {
+			content: '\ea17';
+		}
+
+		 .iconfont-don-hang:before {
+			content: '\ea18';
+		}
+
+		 .iconfont-exchange:before {
+			content: '\ea19';
+		}
+
+		 .iconfont-exit:before {
+			content: '\ea1a';
+		}
+
+		 .iconfont-facebook:before {
+			content: '\ea1b';
+		}
+
+		 .iconfont-flight:before {
+			content: '\ea1c';
+		}
+
+		 .iconfont-flight2:before {
+			content: '\ea1d';
+		}
+
+		 .iconfont-fund:before {
+			content: '\ea1e';
+		}
+
+		 .iconfont-gift:before {
+			content: '\ea1f';
+		}
+
+		 .iconfont-global:before {
+			content: '\ea20';
+		}
+
+		 .iconfont-group:before {
+			content: '\ea21';
+		}
+
+		 .iconfont-hanh-ly:before {
+			content: '\ea22';
+		}
+
+		 .iconfont-heart:before {
+			content: '\ea23';
+		}
+
+		 .iconfont-help:before {
+			content: '\ea24';
+		}
+
+		 .iconfont-home:before {
+			content: '\ea25';
+		}
+
+		 .iconfont-image:before {
+			content: '\ea26';
+		}
+
+		 .iconfont-info:before {
+			content: '\ea27';
+		}
+
+		 .iconfont-instagram:before {
+			content: '\ea28';
+		}
+
+		 .iconfont-lang:before {
+			content: '\ea29';
+		}
+
+		 .iconfont-link:before {
+			content: '\ea2a';
+		}
+
+		 .iconfont-Lock:before {
+			content: '\ea2b';
+		}
+
+		 .iconfont-luggage:before {
+			content: '\ea2c';
+		}
+
+		 .iconfont-massage:before {
+			content: '\ea2d';
+		}
+
+		 .iconfont-meal:before {
+			content: '\ea2e';
+		}
+
+		 .iconfont-menu:before {
+			content: '\ea2f';
+		}
+
+		 .iconfont-Message:before {
+			content: '\ea30';
+		}
+
+		 .iconfont-minus:before {
+			content: '\ea31';
+		}
+
+		 .iconfont-money:before {
+			content: '\ea32';
+		}
+
+		 .iconfont-morning:before {
+			content: '\ea33';
+		}
+
+		 .iconfont-moto:before {
+			content: '\ea34';
+		}
+
+		 .iconfont-next:before {
+			content: '\ea35';
+		}
+
+		 .iconfont-next2:before {
+			content: '\ea36';
+		}
+
+		 .iconfont-night:before {
+			content: '\ea37';
+		}
+
+		 .iconfont-night2:before {
+			content: '\ea38';
+		}
+
+		 .iconfont-notifi:before {
+			content: '\ea39';
+		}
+
+		 .iconfont-operate:before {
+			content: '\ea3a';
+		}
+
+		 .iconfont-Out:before {
+			content: '\ea3b';
+		}
+
+		 .iconfont-parking:before {
+			content: '\ea3c';
+		}
+
+		 .iconfont-phone-call:before {
+			content: '\ea3d';
+		}
+
+		 .iconfont-phone:before {
+			content: '\ea3e';
+		}
+
+		 .iconfont-phone2:before {
+			content: '\ea3f';
+		}
+
+		 .iconfont-plane:before {
+			content: '\ea40';
+		}
+
+		 .iconfont-plus:before {
+			content: '\ea41';
+		}
+
+		 .iconfont-prev:before {
+			content: '\ea42';
+		}
+
+		 .iconfont-prev2:before {
+			content: '\ea43';
+		}
+
+		 .iconfont-recharge:before {
+			content: '\ea44';
+		}
+
+		 .iconfont-refresh:before {
+			content: '\ea45';
+		}
+
+		 .iconfont-remove:before {
+			content: '\ea46';
+		}
+
+		 .iconfont-restaurant:before {
+			content: '\ea47';
+		}
+
+		 .iconfont-restaurant2:before {
+			content: '\ea48';
+		}
+
+		 .iconfont-safe:before {
+			content: '\ea49';
+		}
+
+		 .iconfont-salon:before {
+			content: '\ea4a';
+		}
+
+		 .iconfont-sauna:before {
+			content: '\ea4b';
+		}
+
+		 .iconfont-search:before {
+			content: '\ea4c';
+		}
+
+		 .iconfont-set:before {
+			content: '\ea4d';
+		}
+
+		 .iconfont-smile:before {
+			content: '\ea4e';
+		}
+
+		 .iconfont-star-half:before {
+			content: '\ea4f';
+		}
+
+		 .iconfont-star-none:before {
+			content: '\ea50';
+		}
+
+		 .iconfont-star:before {
+			content: '\ea51';
+		}
+
+		 .iconfont-tag:before {
+			content: '\ea52';
+		}
+
+		 .iconfont-taxi:before {
+			content: '\ea53';
+		}
+
+		 .iconfont-taxi2:before {
+			content: '\ea54';
+		}
+
+		 .iconfont-ticket:before {
+			content: '\ea55';
+		}
+
+		 .iconfont-ticket2:before {
+			content: '\ea56';
+		}
+
+		 .iconfont-tickets:before {
+			content: '\ea57';
+		}
+
+		 .iconfont-tour-guide:before {
+			content: '\ea58';
+		}
+
+		 .iconfont-train:before {
+			content: '\ea59';
+		}
+
+		 .iconfont-twitter:before {
+			content: '\ea5a';
+		}
+
+		 .iconfont-Upload:before {
+			content: '\ea5b';
+		}
+
+		 .iconfont-user:before {
+			content: '\ea5c';
+		}
+
+		 .iconfont-user2:before {
+			content: '\ea5d';
+		}
+
+		 .iconfont-user3:before {
+			content: '\ea5e';
+		}
+
+		 .iconfont-user4:before {
+			content: '\ea5f';
+		}
+
+		 .iconfont-user5:before {
+			content: '\ea60';
+		}
+
+		 .iconfont-villa:before {
+			content: '\ea61';
+		}
+
+		 .iconfont-w-hoptac:before {
+			content: '\ea62';
+		}
+
+		 .iconfont-warning:before {
+			content: '\ea63';
+		}
+
+		 .iconfont-warring:before {
+			content: '\ea64';
+		}
+
+		 .iconfont-warring2:before {
+			content: '\ea65';
+		}
+
+		 .iconfont-wifi:before {
+			content: '\ea66';
+		}
+
+		 .iconfont-world:before {
+			content: '\ea67';
+		}
+
+		

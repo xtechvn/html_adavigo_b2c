@@ -1,0 +1,337 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Simple Transactional Email</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        @media only screen and (max-width: 620px) {
+            table.body h1 {
+                font-size: 24px !important;
+                margin-bottom: 10px !important;
+                font-family: Verdana, Helvetica, Arial, sans-serif;
+            }
+            table.body .container {
+                padding: 0 !important;
+                width: 100% !important;
+            }
+            table.body .main {
+                border-left-width: 0 !important;
+                border-radius: 0 !important;
+                border-right-width: 0 !important;
+            }
+            table.body .btn a {
+                width: 100% !important;
+            }
+            table.body .img-responsive {
+                height: auto !important;
+                max-width: 100% !important;
+                width: auto !important;
+            }
+            table.body .inner-wrapper,
+            table.body .content-block {
+                padding-left: 15px !important;
+                padding-right: 15px !important;
+            }
+            table.body .link-app a {
+                margin: 0 5px !important;
+            }
+            table.body .inner-content {
+                padding-left: 0px !important;
+                padding-right: 0px !important;
+            }
+        }
+        
+        @media all {
+            .apple-link a {
+                color: inherit !important;
+                font-size: inherit !important;
+                font-weight: inherit !important;
+                line-height: inherit !important;
+            }
+            #MessageViewBody a {
+                color: inherit;
+                text-decoration: none;
+                font-size: inherit;
+                font-weight: inherit;
+                line-height: inherit;
+            }
+            .btn-primary table td:hover {
+                background-color: #087cce !important;
+            }
+            .btn-primary a:hover {
+                background-color: #087cce !important;
+                border-color: #087cce !important;
+            }
+        }
+    </style>
+</head>
+
+<body style="background-color: #f6f6f6;color: #00264D; font-family:Arial; -webkit-font-smoothing: antialiased; font-size: 14px; line-height: 1.4; margin: 0; padding: 0; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+    <span class="preheader" style="color: transparent; display: none; height: 0; max-height: 0; max-width: 0; opacity: 0; overflow: hidden; mso-hide: all; visibility: hidden; width: 0;">This
+    is preheader text. Some clients will show this text as a preview.</span>
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="body" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;" width="100%" bgcolor="#f6f6f6">
+        <tr>
+            <td style="font-family:Arial; font-size: 14px; vertical-align: top;" valign="top">&nbsp;</td>
+            <td class="container" style="font-family:Arial; font-size: 14px; vertical-align: top; display: block; max-width: 600px; padding: 10px; width: 600px; margin: 0 auto;" width="580" valign="top">
+                <div class="content" style="box-sizing: border-box; display: block; margin: 0 auto; max-width: 600px; padding: 10px;">
+
+                    <!-- START CENTERED WHITE CONTAINER -->
+                    <table role="presentation" class="main" border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt;width: 100%;border-spacing: inherit;" width="100%">
+                        <!-- START MAIN CONTENT AREA -->
+                        <tr>
+                            <td class="wrapper" style="font-family:Arial; font-size: 14px; vertical-align: top; box-sizing: border-box;" valign="top">
+                                <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; background: #ffffff;border-top: 3px solid #070BA0;" width="100%">
+                                    <tr>
+                                        <td class="inner-wrapper" style="font-family:Arial; font-size: 14px; vertical-align: top;padding: 10px 15px;background: #F1F5F9;" valign="top">
+                                            <img alt="" src="images/email/logo.png">
+                                        </td>
+                                        <td class="inner-wrapper" style="font-family:Arial; font-size: 14px; vertical-align: top;padding: 10px 15px;background: #F1F5F9;text-align: right" valign="top">
+                                            <img alt="" src="images/email/hotline.png">
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; background: #ffffff;" width="100%">
+                                    <tr>
+                                        <td class="inner-wrapper" style="font-family:Arial; font-size: 14px; vertical-align: top;padding: 15px;" valign="top">
+                                            <p style="font-family:Arial; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 5px;">
+                                                Chào quý khách <b>Đinh Thanh Bình</b>,
+                                            </p>
+                                            <p style="font-family:Arial; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 15px;">
+                                                Adavigo gửi tới Anh/chị Đinh Thanh Bình thông tin xác nhận đặt dịch vụ như sau:
+                                            </p>
+                                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; background: #ffffff;margin-bottom: 15px" width="100%">
+                                                <tr>
+                                                    <td class="inner-wrapper" style="vertical-align: top;padding: 10px 15px;background: #F1F5F9;" valign="top">
+                                                        <img alt="" src="images/email/logo.png">
+                                                    </td>
+                                                    <td class="inner-wrapper" style="font-family:Arial; font-size: 14px; vertical-align: top;padding: 10px 15px;background: #F1F5F9;;" valign="top">
+                                                        <b>Công ty cổ phần thường mại và dịch vụ quốc tế Đại Việt</b></br>
+                                                        VPGD Hà Nội: 289A, Khuất Duy Tiến, Thanh Xuân, Hà Nội
+                                                        VPGD Hồ Chí Minh: Số 138 Lê Văn Sỹ, P.10 Q. Phú Nhuận, TP. Hồ Chí Minh
+                                                        VPGD Phú Quốc: 72 Trần Hưng Đạo, P. Dương Đông, Phú Quốc
+                                                        Website: Adavigo.com
+                                                        Hotline: 096 191 192
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; background: #ffffff;" width="100%">
+                                                <tr>
+                                                    <td class="inner-wrapper" style="font-family:Arial; font-size: 14px; vertical-align: top;padding: 0;" valign="top">
+                                                        <p style="font-family:Arial; font-size: 20px; font-weight: 500; margin: 0; margin-bottom: 0;">
+                                                            Phiếu xác nhận đơn hàng
+                                                        </p>
+                                                        <span style="display:block; width: 100%; height:1px; margin:16px auto; background:#e5e5e5"></span>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; background: #ffffff;" width="100%">
+                                                <tr>
+                                                    <td class="inner-wrapper" style="font-family:Arial; font-size: 14px;padding: 3px" valign="top"><b>Tên khách hàng</b></td>
+                                                    <td class="inner-wrapper" style="font-family:Arial; font-size: 14px;padding: 3px" valign="top">Đinh Thanh Bình</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="inner-wrapper" style="font-family:Arial; font-size: 14px;padding: 3px" valign="top"><b>Số điện thoại</b></td>
+                                                    <td class="inner-wrapper" style="font-family:Arial; font-size: 14px;padding: 3px" valign="top">0918882861</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="inner-wrapper" style="font-family:Arial; font-size: 14px;padding: 3px" valign="top"><b>Email</b></td>
+                                                    <td class="inner-wrapper" style="font-family:Arial; font-size: 14px;padding: 3px" valign="top"><a href="#" style="color: #1254FF;text-decoration-line: underline;">dinhthanhbinh2305@gmail.com</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="inner-wrapper" style="font-family:Arial; font-size: 14px;padding: 3px" valign="top"><b>Mã đơn hàng</b></td>
+                                                    <td class="inner-wrapper" style="font-family:Arial; font-size: 14px;padding: 3px" valign="top"><b>O23L03294</b></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="inner-wrapper" style="font-family:Arial; font-size: 14px;padding: 3px" valign="top"><b>Tên khách hàng</b></td>
+                                                    <td class="inner-wrapper" style="font-family:Arial; font-size: 14px;padding: 3px" valign="top">Đinh Thanh Bình</td>
+                                                </tr>
+                                            </table>
+                                            <span style="display:block; width: 100%; height:1px; margin:16px auto; background:#e5e5e5"></span>
+                                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; background: #ffffff;margin-bottom: 20px;" width="100%">
+                                                <tr>
+                                                    <td colspan="4" class="inner-wrapper" style="font-family:Arial; font-size: 15px;font-weight: bold;padding: 12px;background: #E5EAF0;border: 1px solid #B7CCD9" valign="top">
+                                                        Dịch vụ Tour: Hà Nội - Sydney - Blue Moutain - Melbourne - Hà Nội
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="inner-wrapper" style="font-family:Arial; font-size: 14px;padding: 10px;border: 1px solid #B7CCD9;" valign="top"><b>Ngày khởi hành</b></td>
+                                                    <td class="inner-wrapper" style="font-family:Arial; font-size: 14px;padding: 10px;border: 1px solid #B7CCD9;" valign="top">12/10/2023</td>
+                                                    <td class="inner-wrapper" style="font-family:Arial; font-size: 14px;padding: 10px;border: 1px solid #B7CCD9" valign="top"><b>Ngày đến</b></td>
+                                                    <td class="inner-wrapper" style="font-family:Arial; font-size: 14px;padding: 10px;border: 1px solid #B7CCD9" valign="top">12/10/2023</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="inner-wrapper" style="font-family:Arial; font-size: 14px;padding: 10px;border: 1px solid #B7CCD9;" valign="top"><b>Điểm đi</b></td>
+                                                    <td class="inner-wrapper" style="font-family:Arial; font-size: 14px;padding: 10px;border: 1px solid #B7CCD9;" valign="top">Hà Nộ</td>
+                                                    <td class="inner-wrapper" style="font-family:Arial; font-size: 14px;padding: 10px;border: 1px solid #B7CCD9" valign="top"><b>Điểm đến</b></td>
+                                                    <td class="inner-wrapper" style="font-family:Arial; font-size: 14px;padding: 10px;border: 1px solid #B7CCD9" valign="top">Australia</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="inner-wrapper" style="font-family:Arial; font-size: 14px;padding: 10px;border: 1px solid #B7CCD9;" valign="top"><b>Loại Tour</b></td>
+                                                    <td class="inner-wrapper" style="font-family:Arial; font-size: 14px;padding: 10px;border: 1px solid #B7CCD9;" valign="top">12/10/2023</td>
+                                                    <td class="inner-wrapper" style="font-family:Arial; font-size: 14px;padding: 10px;border: 1px solid #B7CCD9" valign="top"><b>Ngày đến</b></td>
+                                                    <td class="inner-wrapper" style="font-family:Arial; font-size: 14px;padding: 10px;border: 1px solid #B7CCD9" valign="top">12/10/2023</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="inner-wrapper" style="font-family:Arial; font-size: 14px;padding: 10px;background: #F1F5F9;border: 1px solid #B7CCD9;" valign="top"><b>Tổng tiền tour</b></td>
+                                                    <td colspan="3" class="inner-wrapper" style="font-family:Arial; font-size: 14px;padding: 10px;background: #F1F5F9;border: 1px solid #B7CCD9" valign="top"><b>50,000,000</b></td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="4" class="inner-wrapper" style="font-family:Arial; font-size: 15px;font-weight: bold;padding: 12px;background: #E5EAF0;border: 1px solid #B7CCD9" valign="top">
+                                                        Dịch vụ khách sạn: Vinpearl Sealink Nha Trang
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="inner-wrapper" style="font-family:Arial; font-size: 14px;padding: 10px;border: 1px solid #B7CCD9;" valign="top"><b>Ngày khởi hành</b></td>
+                                                    <td class="inner-wrapper" style="font-family:Arial; font-size: 14px;padding: 10px;border: 1px solid #B7CCD9;" valign="top">12/10/2023</td>
+                                                    <td class="inner-wrapper" style="font-family:Arial; font-size: 14px;padding: 10px;border: 1px solid #B7CCD9" valign="top"><b>Ngày đến</b></td>
+                                                    <td class="inner-wrapper" style="font-family:Arial; font-size: 14px;padding: 10px;border: 1px solid #B7CCD9" valign="top">12/10/2023</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="inner-wrapper" style="font-family:Arial; font-size: 14px;padding: 10px;border: 1px solid #B7CCD9;" valign="top"><b>Điểm đi</b></td>
+                                                    <td class="inner-wrapper" style="font-family:Arial; font-size: 14px;padding: 10px;border: 1px solid #B7CCD9;" valign="top">Hà Nộ</td>
+                                                    <td class="inner-wrapper" style="font-family:Arial; font-size: 14px;padding: 10px;border: 1px solid #B7CCD9" valign="top"><b>Điểm đến</b></td>
+                                                    <td class="inner-wrapper" style="font-family:Arial; font-size: 14px;padding: 10px;border: 1px solid #B7CCD9" valign="top">Australia</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="inner-wrapper" style="font-family:Arial; font-size: 14px;padding: 10px;border: 1px solid #B7CCD9;" valign="top"><b>Loại Tour</b></td>
+                                                    <td class="inner-wrapper" style="font-family:Arial; font-size: 14px;padding: 10px;border: 1px solid #B7CCD9;" valign="top">12/10/2023</td>
+                                                    <td class="inner-wrapper" style="font-family:Arial; font-size: 14px;padding: 10px;border: 1px solid #B7CCD9" valign="top"><b>Ngày đến</b></td>
+                                                    <td class="inner-wrapper" style="font-family:Arial; font-size: 14px;padding: 10px;border: 1px solid #B7CCD9" valign="top">12/10/2023</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="inner-wrapper" style="font-family:Arial; font-size: 14px;padding: 10px;background: #F1F5F9;border: 1px solid #B7CCD9;" valign="top"><b>Tổng tiền tour</b></td>
+                                                    <td colspan="3" class="inner-wrapper" style="font-family:Arial; font-size: 14px;padding: 10px;background: #F1F5F9;border: 1px solid #B7CCD9" valign="top"><b>50,000,000</b></td>
+                                                </tr>
+                                            </table>
+
+                                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; background: #ffffff;" width="100%">
+                                                <tr>
+                                                    <td colspan="3" class="inner-wrapper" style="font-family:Arial; font-size: 14px; vertical-align: top;padding: 15px;background: #F1F5F9;border-radius: 20px;" valign="top">
+                                                        <p style="font-family:Arial; font-size: 20px; font-weight: 600; margin: 0; margin-bottom: 20px;">
+                                                            Thông tin chuyển khoản
+                                                        </p>
+                                                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;" width="100%">
+                                                            <tr>
+                                                                <td class="inner-wrapper" style="font-family:Arial; font-size: 14px; vertical-align: top;padding: 15px;background: #ffffff;border-radius: 20px;" valign="top">
+                                                                    <p style="margin-bottom: 10px;">
+                                                                        <img alt="" src="images/email/Label.png">
+                                                                    </p>
+                                                                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;" width="100%">
+                                                                        <tr>
+                                                                            <td class="inner-wrapper" style="font-family:Arial; font-size: 14px;padding: 0px 0px" valign="top">
+                                                                                <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;" width="100%">
+                                                                                    <tr>
+                                                                                        <td class="inner-wrapper" style="font-family:Arial; font-size: 14px;padding: 3px;width: 100px;" valign="top">Ngân hàng</td>
+                                                                                        <td class="inner-wrapper" style="font-family:Arial; font-size: 14px;padding: 3px" valign="top"><b>VP Bank </b></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td class="inner-wrapper" style="font-family:Arial; font-size: 14px;padding: 3px">Số tài khoản</td>
+                                                                                        <td class="inner-wrapper" style="font-family:Arial; font-size: 14px;padding: 3px" valign="top">
+                                                                                            <b style="vertical-align: super;">969888</b> <span><img alt="" src="images/email/copy.png"></span>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td class="inner-wrapper" style="font-family:Arial; font-size: 14px;padding: 3px" valign="top">Chi nhánh</td>
+                                                                                        <td class="inner-wrapper" style="font-family:Arial; font-size: 14px;padding: 3px" valign="top"><b>Thăng Long </b></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td class="inner-wrapper" style="font-family:Arial; font-size: 14px;padding: 3px" valign="top">Chủ tài khoản</td>
+                                                                                        <td class="inner-wrapper" style="font-family:Arial; font-size: 14px;padding: 3px" valign="top"><b>Công ty Cổ phần Thương mại và Dịch Vụ Quốc tế Đại Việt</b></td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                            <td class="inner-wrapper" style="font-family:Arial; font-size: 14px;padding:0px 10px;text-align: center;border-left:1px solid #E3EBF3;width: 180px;" valign="top">
+                                                                                <img width="140" alt="" src="images/email/qr-code.png"></br>
+                                                                                <b>Quét mã QR để thanh toán</b></br>
+                                                                                Sử dụng internet banking hoặc ứng dụng hỗ trợ QR code để quét mã
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <span style="display:block; width: 100%; height:1px; margin:16px auto; background:#e5e5e5"></span>
+                                                                    <p style="font-family:Arial; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 5px;">
+                                                                        <b>Bạn đã thanh toán xong?</b>
+                                                                    </p>
+                                                                    <p style="font-family:Arial; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 15px;">
+                                                                        Sau khi xác nhận số tiền thanh toán, chúng tôi sẽ gửi vé điện tử vào email của bạn
+                                                                    </p>
+                                                                    <p style="display: block;background: #E3EBF3;border-radius: 10px;font-weight: 600;text-align: center;padding: 15px;">Tôi đã thanh toán xong</p>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="inner-wrapper" style="font-family:Arial; font-size: 14px;padding: 10px;" valign="top">
+                                                        <p style="font-family:Arial; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 5px;">
+                                                            <b>Ghi chú:</b>
+                                                        </p>
+                                                        <ul style="color: rgba(105, 128, 150, 1);margin-bottom: 20px;">
+                                                            <li>Quý khách vui lòng tham khảo chi tiết điều lệ vận chuyển quốc nội tại đây khi tham gia bay</li>
+                                                            <li>Giá đã bao gồm thuế và các loại phí dich vụ khác</li>
+                                                            <li>Điều kiện hoàn hủy và phí hoàn hủy sẽ được tính theo quy định của hãng hàng không và khách sạn</li>
+                                                            <li>Quan trọng: Trường hợp quý khách có yêu cầu xuất hoát đơn đặc biệt, vui lòng liên hệ bộ phận CSKH đeer được hỗ trợ trong khung thời gian quy định xuất hóa đơn cho phép của Adavigo</li>
+                                                        </ul>
+                                                        <p style="font-family:Arial; font-size: 16px; font-weight: 700;font-style: italic; margin: 0; margin-bottom: 5px;">Lưu ý: Đây là Email tự động, quý khách vui lòng không trả lời Email này</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; background: #ffffff;" width="100%">
+                                                <tr>
+                                                    <td style="text-align: center">
+                                                        <div><img alt="" src="images/email/phone.png"></div>
+                                                        <div style="color: #698096;">Hỗ trợ khách hàng 24/7 1900 2083</div>
+                                                    </td>
+                                                    <td style="text-align: center">
+                                                        <div><img alt="" src="images/email/car.png"></div>
+                                                        <div style="color: #698096;">Ứng dụng tiện lợi, thanh toán dễ dàng</div>
+                                                    </td>
+                                                    <td style="text-align: center">
+                                                        <div><img alt="" src="images/email/plane.png"></div>
+                                                        <div style="color: #698096;">Giá tốt sát ngày, Nhiều ưu đãi hấp dẫn</div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="inner-wrapper" style="font-family:Arial; font-size: 16px; vertical-align: top;padding: 15px 15px;background: #070BA0;color: #fff;" valign="top">
+                                            <p style="font-family:Arial; font-size: 14px; font-weight: 600; margin: 0; margin-bottom: 15px;">
+                                                CÔNG TY TNHH ADAVIGO VIỆT NAM
+                                            </p>
+                                            <p style="font-family:Arial; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 5px;">
+                                                Hà Nội Tầng 11, Tòa Peakview, 36 Hoàng Cầu, Phường Ô Chợ Dừa, Đống Đa
+                                            </p>
+                                            <p style="font-family:Arial; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 5px;">
+                                                Tel: 024 7109 9999
+                                            </p>
+                                            <p style="font-family:Arial; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 5px;">
+                                                TP.HCM Tầng 6, Tòa Central Park, 117 Nguyễn Du, Phường Bến Thành, Q1
+                                            </p>
+                                            <p style="font-family:Arial; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 5px;">
+                                                Tel: 028 7109 9998
+                                            </p>
+                                            <p style="font-family:Arial; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 5px;">
+                                                Cửa hàng 168 Xã Đàn, Đống Đa, Hà Nội
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <!-- END MAIN CONTENT AREA -->
+                    </table>
+                    <!-- END CENTERED WHITE CONTAINER -->
+                </div>
+            </td>
+            <td style="font-family:Arial; font-size: 14px; vertical-align: top;" valign="top">&nbsp;</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

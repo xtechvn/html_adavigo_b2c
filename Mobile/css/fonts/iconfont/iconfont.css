@@ -1,0 +1,431 @@
+/**
+iconfont Webfont
+*/
+@font-face {
+	font-family: 'iconfont';
+	src: url('iconfont.eot?1695182989478');
+	src: url('iconfont.eot?#iefix-1695182989478') format('embedded-opentype'),
+		url('iconfont.woff2?1695182989478') format('woff2'),
+		url('iconfont.woff?1695182989478') format('woff'),
+		url('iconfont.ttf?1695182989478') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^='iconfont-']:before,
+[class*=' iconfont-']:before {
+	font-family: 'iconfont';
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 1;
+	font-weight: normal;
+	font-style: normal;
+	speak: none;
+	text-decoration: inherit;
+	font-size: inherit;
+	text-transform: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/*
+Glyphs list
+*/
+ .iconfont-add:before {
+			content: '\ea01';
+		}
+
+		 .iconfont-address:before {
+			content: '\ea02';
+		}
+
+		 .iconfont-address2:before {
+			content: '\ea03';
+		}
+
+		 .iconfont-afternoon:before {
+			content: '\ea04';
+		}
+
+		 .iconfont-alarm-clock:before {
+			content: '\ea05';
+		}
+
+		 .iconfont-body-massage:before {
+			content: '\ea06';
+		}
+
+		 .iconfont-booking:before {
+			content: '\ea07';
+		}
+
+		 .iconfont-building:before {
+			content: '\ea08';
+		}
+
+		 .iconfont-cancel:before {
+			content: '\ea09';
+		}
+
+		 .iconfont-changer:before {
+			content: '\ea0a';
+		}
+
+		 .iconfont-checkmark:before {
+			content: '\ea0b';
+		}
+
+		 .iconfont-child:before {
+			content: '\ea0c';
+		}
+
+		 .iconfont-clock:before {
+			content: '\ea0d';
+		}
+
+		 .iconfont-close:before {
+			content: '\ea0e';
+		}
+
+		 .iconfont-coffee-cup:before {
+			content: '\ea0f';
+		}
+
+		 .iconfont-customer-service:before {
+			content: '\ea10';
+		}
+
+		 .iconfont-date:before {
+			content: '\ea11';
+		}
+
+		 .iconfont-Dawn:before {
+			content: '\ea12';
+		}
+
+		 .iconfont-don-hang:before {
+			content: '\ea13';
+		}
+
+		 .iconfont-exchange:before {
+			content: '\ea14';
+		}
+
+		 .iconfont-exit:before {
+			content: '\ea15';
+		}
+
+		 .iconfont-facebook:before {
+			content: '\ea16';
+		}
+
+		 .iconfont-fillter:before {
+			content: '\ea17';
+		}
+
+		 .iconfont-flight:before {
+			content: '\ea18';
+		}
+
+		 .iconfont-flight2:before {
+			content: '\ea19';
+		}
+
+		 .iconfont-fund:before {
+			content: '\ea1a';
+		}
+
+		 .iconfont-gift:before {
+			content: '\ea1b';
+		}
+
+		 .iconfont-global:before {
+			content: '\ea1c';
+		}
+
+		 .iconfont-group:before {
+			content: '\ea1d';
+		}
+
+		 .iconfont-hanh-ly:before {
+			content: '\ea1e';
+		}
+
+		 .iconfont-heart:before {
+			content: '\ea1f';
+		}
+
+		 .iconfont-help:before {
+			content: '\ea20';
+		}
+
+		 .iconfont-home:before {
+			content: '\ea21';
+		}
+
+		 .iconfont-image:before {
+			content: '\ea22';
+		}
+
+		 .iconfont-info:before {
+			content: '\ea23';
+		}
+
+		 .iconfont-instagram:before {
+			content: '\ea24';
+		}
+
+		 .iconfont-lang:before {
+			content: '\ea25';
+		}
+
+		 .iconfont-Lock:before {
+			content: '\ea26';
+		}
+
+		 .iconfont-luggage:before {
+			content: '\ea27';
+		}
+
+		 .iconfont-massage:before {
+			content: '\ea28';
+		}
+
+		 .iconfont-meal:before {
+			content: '\ea29';
+		}
+
+		 .iconfont-menu:before {
+			content: '\ea2a';
+		}
+
+		 .iconfont-Message:before {
+			content: '\ea2b';
+		}
+
+		 .iconfont-minus:before {
+			content: '\ea2c';
+		}
+
+		 .iconfont-money:before {
+			content: '\ea2d';
+		}
+
+		 .iconfont-morning:before {
+			content: '\ea2e';
+		}
+
+		 .iconfont-moto:before {
+			content: '\ea2f';
+		}
+
+		 .iconfont-next:before {
+			content: '\ea30';
+		}
+
+		 .iconfont-next2:before {
+			content: '\ea31';
+		}
+
+		 .iconfont-night:before {
+			content: '\ea32';
+		}
+
+		 .iconfont-night2:before {
+			content: '\ea33';
+		}
+
+		 .iconfont-notifi:before {
+			content: '\ea34';
+		}
+
+		 .iconfont-operate:before {
+			content: '\ea35';
+		}
+
+		 .iconfont-Out:before {
+			content: '\ea36';
+		}
+
+		 .iconfont-parking:before {
+			content: '\ea37';
+		}
+
+		 .iconfont-phone-call:before {
+			content: '\ea38';
+		}
+
+		 .iconfont-phone:before {
+			content: '\ea39';
+		}
+
+		 .iconfont-phone2:before {
+			content: '\ea3a';
+		}
+
+		 .iconfont-plane-seats:before {
+			content: '\ea3b';
+		}
+
+		 .iconfont-plane:before {
+			content: '\ea3c';
+		}
+
+		 .iconfont-plus:before {
+			content: '\ea3d';
+		}
+
+		 .iconfont-prev:before {
+			content: '\ea3e';
+		}
+
+		 .iconfont-prev2:before {
+			content: '\ea3f';
+		}
+
+		 .iconfont-recharge:before {
+			content: '\ea40';
+		}
+
+		 .iconfont-refresh:before {
+			content: '\ea41';
+		}
+
+		 .iconfont-remove:before {
+			content: '\ea42';
+		}
+
+		 .iconfont-restaurant:before {
+			content: '\ea43';
+		}
+
+		 .iconfont-restaurant2:before {
+			content: '\ea44';
+		}
+
+		 .iconfont-safe:before {
+			content: '\ea45';
+		}
+
+		 .iconfont-salon:before {
+			content: '\ea46';
+		}
+
+		 .iconfont-sauna:before {
+			content: '\ea47';
+		}
+
+		 .iconfont-search:before {
+			content: '\ea48';
+		}
+
+		 .iconfont-set:before {
+			content: '\ea49';
+		}
+
+		 .iconfont-smile:before {
+			content: '\ea4a';
+		}
+
+		 .iconfont-star-half:before {
+			content: '\ea4b';
+		}
+
+		 .iconfont-star-none:before {
+			content: '\ea4c';
+		}
+
+		 .iconfont-star:before {
+			content: '\ea4d';
+		}
+
+		 .iconfont-tag:before {
+			content: '\ea4e';
+		}
+
+		 .iconfont-taxi:before {
+			content: '\ea4f';
+		}
+
+		 .iconfont-taxi2:before {
+			content: '\ea50';
+		}
+
+		 .iconfont-ticket:before {
+			content: '\ea51';
+		}
+
+		 .iconfont-ticket2:before {
+			content: '\ea52';
+		}
+
+		 .iconfont-tickets:before {
+			content: '\ea53';
+		}
+
+		 .iconfont-tour-guide:before {
+			content: '\ea54';
+		}
+
+		 .iconfont-train:before {
+			content: '\ea55';
+		}
+
+		 .iconfont-twitter:before {
+			content: '\ea56';
+		}
+
+		 .iconfont-Upload:before {
+			content: '\ea57';
+		}
+
+		 .iconfont-user-group:before {
+			content: '\ea58';
+		}
+
+		 .iconfont-user:before {
+			content: '\ea59';
+		}
+
+		 .iconfont-user2:before {
+			content: '\ea5a';
+		}
+
+		 .iconfont-user3:before {
+			content: '\ea5b';
+		}
+
+		 .iconfont-user4:before {
+			content: '\ea5c';
+		}
+
+		 .iconfont-user5:before {
+			content: '\ea5d';
+		}
+
+		 .iconfont-villa:before {
+			content: '\ea5e';
+		}
+
+		 .iconfont-w-hoptac:before {
+			content: '\ea5f';
+		}
+
+		 .iconfont-warning:before {
+			content: '\ea60';
+		}
+
+		 .iconfont-warring:before {
+			content: '\ea61';
+		}
+
+		 .iconfont-warring2:before {
+			content: '\ea62';
+		}
+
+		 .iconfont-wifi:before {
+			content: '\ea63';
+		}
+
+		

@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html lang="vi" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="" />
+    <meta name="description" content="content">
+    <meta name="keywords" content="Việt Nam">
+    <title>
+        Adavido
+
+    </title>
+    <link type="image/x-icon" href="http://ssl.gstatic.com/docs/doclist/images/infinite_arrow_favicon_5.ico" rel="shortcut icon" />
+    <link rel="stylesheet" href="css/fontAwesome/css/font-awesome.min.css" media="all" />
+    <link rel="stylesheet" href="css/bootstrap.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/select2.min.css" />
+    <link rel="stylesheet" href="css/style.css" media="all" />
+    <!-- build:head2 -->
+    <!-- build:head -->
+</head>
+
+<body class="homepage">
+
+    
+<section class="section-main clearfix">
+    <div class="container" style="padding-top: 20px;">
+        <p data-toggle="modal" data-target="#myModal0">Popup lọc chuyến bay</p>
+        <p data-toggle="modal" data-target="#myModal1">Popup lọc Tìm Kiếm</p>
+        <p data-toggle="modal" data-target="#myModal2">Popup lọc Sắp xếp</p>
+        <p data-toggle="modal" data-target="#myModal3">Popup chi tiết chuyến bay</p>
+        <p data-toggle="modal" data-target="#myModal4">Popup xuất hóa đơn</p>
+        <p data-toggle="modal" data-target="#myModal5">Popup chi tiết đơn giá</p>
+        <p data-toggle="modal" data-target="#myModal6">Popup thêm hành lý</p>
+        <p data-toggle="modal" data-target="#myModal7">Popup chọn số lượng khách</p>
+        <p data-toggle="modal" data-target="#myModal8">Popup chọn lịch vé máy bay</p>
+        <p data-toggle="modal" data-target="#myModal9">Đăng nhập, đăng ký</p>
+    </div>
+
+</section>
+
+<!--POPUP Bộ Lọc -->
+<div class="modal fade" id="myModal0">
+    <div class="modal-dialog full-height">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <svg class="icon-svg">
+                        <use xlink:href="images/icons/icon.svg#prev2"></use>
+                    </svg>
+                </button>
+                <div class="txt_16"><strong>Bộ lọc</strong></div>
+                <a class="clear" href="#">
+                    Xóa lọc&nbsp;
+                    <svg class="icon-svg">
+                        <use xlink:href="images/icons/icon.svg#refresh"></use>
+                    </svg>
+                </a>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="fillter-controler">
+                    <div class="price-filter border-bottom mb12 pb-12">
+                        <div class="mb12 txt_16"><strong>Khoảng giá</strong></div>
+                        <div class="price-filter-container">
+                            <div id="slider-range"></div>
+                            <form>
+                                <input type="hidden" id="min-value" name="min-value" value="">
+                                <input type="hidden" id="max-value" name="max-value" value="">
+                            </form>
+                            <div class="row slider-labels">
+                                <div class="col-6">
+                                    <div class="wrap">
+                                        <span id="slider-range-value1"></span> đ
+                                    </div>
+
+                                </div>
+                                <div class="col-6">
+                                    <div class="wrap text-right">
+                                        <span id="slider-range-value2"></span> đ
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-bottom mb12">
+                        <div class="mb12 txt_16"><strong>Hãng bay</strong></div>
+                        <label class="confir_res">
+                            <div class="slogan">
+                                <img src="images/hang-bay/vietnam-airline.png" alt="">
+                                <span>Vietnam Airlines</span>
+                            </div>
+                            <input type="radio" name="inlineGoi" id="Goi1" value="goioption1">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="confir_res">
+                            <div class="slogan">
+                                <img src="images/hang-bay/bamboo.png" alt="">
+                                <span>Bamboo Airways</span>
+                            </div>
+                            <input type="radio" name="inlineGoi" id="Goi1" value="goioption1" checked="">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="confir_res">
+                            <div class="slogan">
+                                <img src="images/hang-bay/pacifict.png" alt="">
+                                <span>Pacific Airlines</span>
+                            </div>
+                            <input type="radio" name="inlineGoi" id="Goi1" value="goioption1">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="confir_res">
+                            <div class="slogan">
+                                <img src="images/hang-bay/vietjet.png" alt="">
+                                <span>Vietjet Air</span>
+                            </div>
+                            <input type="radio" name="inlineGoi" id="Goi1" value="goioption1">
+                            <span class="checkmark"></span>
+                        </label>
+
+
+                    </div>
+                    <div class="border-bottom mb12 pb-12">
+                        <div class="mb12 txt_16"><strong>Thời gian cất cánh</strong></div>
+                        <div class="session-list grid grid__2">
+                            <a class="item" href="#">
+                                <div class="text">
+                                    <svg class="icon-svg">
+                                        <use xlink:href="images/icons/icon.svg#Dawn">
+                                        </use>
+                                    </svg> Sáng sớm
+                                </div>
+                                <div class="time">00:00 - 6:00</div>
+                            </a>
+                            <a class="item" href="#">
+                                <div class="text">
+                                    <svg class="icon-svg">
+                                        <use xlink:href="images/icons/icon.svg#morning">
+                                        </use>
+                                    </svg> Buổi sáng
+                                </div>
+                                <div class="time">00:00 - 6:00</div>
+                            </a>
+                            <a class="item" href="#">
+                                <div class="text">
+                                    <svg class="icon-svg">
+                                        <use xlink:href="images/icons/icon.svg#afternoon">
+                                        </use>
+                                    </svg> Buổi chiều
+                                </div>
+                                <div class="time">00:00 - 6:00</div>
+                            </a>
+                            <a class="item" href="#">
+                                <div class="text">
+                                    <svg class="icon-svg" style="width: 20px;height: 20px;">
+                                        <use xlink:href="images/icons/icon.svg#night">
+                                        </use>
+                                    </svg> Buổi tối
+                                </div>
+                                <div class="time">00:00 - 6:00</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="border-bottom mb12">
+                        <div class="mb12 txt_16"><strong>Hạng vé</strong></div>
+                        <label class="confir_res">
+                            Phổ thông
+                            <input type="radio" name="inlineGoi2" id="Goi1" checked="">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="confir_res">
+                            Thương gia
+                            <input type="radio" name="inlineGoi2" id="Goi1">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="confir_res">
+                            Phổ thông Đặc biệt
+                            <input type="radio" name="inlineGoi2" id="Goi1">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="border-bottom mb12">
+                        <div class="mb12 txt_16"><strong>Điểm dừng</strong></div>
+                        <label class="confir_res">
+                            Bay thẳng
+                            <input type="radio" name="inlineGoi3" id="Goi1" checked="">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="confir_res">
+                            1 điểm dừng
+                            <input type="radio" name="inlineGoi3" id="Goi1">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-default size full">Lọc</button>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+<!--POPUP Tìm Kiếm -->
+<div class="modal fade" id="myModal1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header border-bottom pb-12">
+                <div class="txt_18"><strong>Tìm kiếm</strong></div>
+                <button type="button" class="close" data-dismiss="modal">×</button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="wrap-search">
+                    <div class="address-w flex">
+                        <button type="submit" class="change"></button>
+                        <div class="item form-search">
+                            <a class="wrap changer">
+                                <div class="flex icon">
+                                    <svg class="icon-svg">
+                                        <use xlink:href="images/icons/icon.svg#flight2"></use>
+                                    </svg>
+                                    <span>Từ</span>
+                                </div>
+                                <div class="text">
+                                    <svg class="icon-svg">
+                                        <use xlink:href="images/icons/icon.svg#plane"></use>
+                                    </svg>
+                                    <input type="search" class="input_search" name="keyword" autocomplete="off" value="" placeholder="Nhập điểm đi">
+                                </div>
+                            </a>
+                            <div class="suggest-search list-address">
+                                <ul>
+                                    <li>
+                                        <svg class="icon-svg">
+                                            <use xlink:href="images/icons/icon.svg#address"></use>
+                                        </svg>
+                                        <div class="address">
+                                            <div class="name">Hà Nội</div>
+                                            <div>HAN - Sân bay Nội Bài</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <svg class="icon-svg">
+                                            <use xlink:href="images/icons/icon.svg#address"></use>
+                                        </svg>
+                                        <div class="address">
+                                            <div class="name">Hồ Chí Minh</div>
+                                            <div>SGN - Sân bay Tân Sơn Nhất</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <svg class="icon-svg">
+                                            <use xlink:href="images/icons/icon.svg#address"></use>
+                                        </svg>
+                                        <div class="address">
+                                            <div class="name">Đà Nẵng</div>
+                                            <div>DAD - Sân bay Quốc tế Đà Nẵng</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <svg class="icon-svg">
+                                            <use xlink:href="images/icons/icon.svg#address"></use>
+                                        </svg>
+                                        <div class="address">
+                                            <div class="name">Hà Nội</div>
+                                            <div>HAN - Sân bay Nội Bài</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <svg class="icon-svg">
+                                            <use xlink:href="images/icons/icon.svg#address"></use>
+                                        </svg>
+                                        <div class="address">
+                                            <div class="name">Hồ Chí Minh</div>
+                                            <div>SGN - Sân bay Tân Sơn Nhất</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <svg class="icon-svg">
+                                            <use xlink:href="images/icons/icon.svg#address"></use>
+                                        </svg>
+                                        <div class="address">
+                                            <div class="name">Đà Nẵng</div>
+                                            <div>DAD - Sân bay Quốc tế Đà Nẵng</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item form-search">
+                            <a class="wrap" href="javascript:;">
+                                <div class="flex icon">
+                                    <svg class="icon-svg">
+                                        <use xlink:href="images/icons/icon.svg#address"></use>
+                                    </svg>
+                                    <span>Đến</span>
+                                </div>
+                                <div class="text">
+                                    <svg class="icon-svg">
+                                        <use xlink:href="images/icons/icon.svg#address"></use>
+                                    </svg>
+                                    <select class="select2" name="" id="select-address" style="width: 100%;"></select>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="date-w t-datepicker flex">
+                        <div class="item">
+                            <a class="wrap" href="javascript:;">
+                                <div class="flex icon">
+                                    <svg class="icon-svg">
+                                        <use xlink:href="images/icons/icon.svg#date"></use>
+                                    </svg>
+                                    <span>Ngày đi</span>
+                                    <div class="btn-on-off">
+                                        <span class="text">Khứ hồi</span>
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <svg class="icon-svg">
+                                        <use xlink:href="images/icons/icon.svg#date"></use>
+                                    </svg>
+                                    <div class="t-check-in"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a class="wrap" href="javascript:;">
+                                <div class="flex icon">
+                                    <svg class="icon-svg">
+                                        <use xlink:href="images/icons/icon.svg#date"></use>
+                                    </svg>
+                                    <span>Ngày về</span>
+                                </div>
+                                <div class="text">
+                                    <svg class="icon-svg">
+                                        <use xlink:href="images/icons/icon.svg#date"></use>
+                                    </svg>
+                                    <div class="t-check-out"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="user-w flex">
+                        <div class="item">
+                            <a href="#" class="wrap changer">
+                                <div class="flex icon">
+                                    <svg class="icon-svg">
+                                        <use xlink:href="images/icons/icon.svg#user-group"></use>
+                                    </svg>
+                                    <span>Số khách</span>
+                                </div>
+                                <div class="text">2 khách</div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="javascript:;" class="wrap changer" data-toggle="modal" data-target="#myModal-seats">
+                                <div class="flex icon">                                    
+                                    <svg class="icon-svg">
+                                        <use xlink:href="images/icons/icon.svg#plane-seats"></use>
+                                    </svg>
+                                    <span>Hạng ghế</span>
+                                </div>
+                                <div class="text">Tất cả</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-default size full">
+                    <svg class="icon-svg">
+                        <use xlink:href="images/icons/icon.svg#search"></use>
+                    </svg>
+                    <span>Tìm kiếm</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--POPUP hạng ghế -->
+<div class="modal fade bottom" id="myModal-seats">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header border-bottom pb-12">
+                <div class="txt_18"><strong>Hạng ghế</strong></div>
+                <button type="button" class="close" data-dismiss="modal">×</button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+                <ul class="list-check border-bottom">
+                    <li class="active">
+                        <div class="color-blue txt_18">Phổ thông</div>
+                        <div class="gray txt_16">Bay tiết kiệm, đáp ứng mọi nhu cầu cơ bản</div>
+                    </li>
+                    <li class="active">
+                        <div class="color-blue txt_18">Phổ thông đặc biệt</div>
+                        <div class="gray txt_16">Chi phí hợp lý với bữa ăn ngon và chỗ để chân rộng rãi</div>
+                    </li>
+                    <li class="active">
+                        <div class="color-blue txt_18">Thương gia</div>
+                        <div class="gray txt_16">Bay đẳng cấp, với quầy làm thủ tục và khu ghế ngồi riêng</div>
+                    </li>
+                    <li class="active">
+                        <div class="color-blue txt_18">Hạng nhất</div>
+                        <div class="gray txt_16">Hạng cao cấp nhất, với dịch vụ 5 sao được cá nhân hoá.</div>
+                    </li>
+                </ul>
+                <button type="submit" class="btn btn-default size full">Áp dụng</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--POPUP Sắp xếp -->
+<div class="modal fade" id="myModal2">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header border-bottom pb-12">
+                <div class="txt_18"><strong>Sắp xếp chuyến bay theo</strong></div>
+                <button type="button" class="close" data-dismiss="modal">×</button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+                <ul class="list-check border-bottom">
+                    <li class="active">Giá tăng dần</li>
+                    <li>Giá và hành lý</li>
+                    <li>Giá cơ bản</li>
+                    <li>Thời gian cất cánh</li>
+                    <li>Thời gian bay</li>
+                </ul>
+                <div class="grid grid__2">
+                    <button type="submit" class="btn btn-default orange-white size">Đặt lại</button>
+                    <button type="submit" class="btn btn-default size">Chọn</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--POPUP Chi tiết chuyến bay -->
+<div class="modal fade" id="myModal3">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Chi tiết chuyến bay</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="flex mb16">
+                    <a href="#" class="btn-default radius_50">Chiều đi</a>
+                    <a href="#" class="btn-default radius_50 gray ml-2">Chiều về</a>
+                </div>
+                <div class="line-bottom"></div>
+                <div class="trip-info min mb16">
+                    <div class="trip-info__right">
+                        <div class="detail-trip">
+                            <div class="time-flight time-flight__v2">
+                                <div class="item">
+                                    <div class="item__left">
+                                        <div class="bold txt_18">20:20</div>
+                                        <span class="date">28/7/2022</span>
+                                    </div>
+                                    <div class="item__right">
+                                        <div class="bold txt_18">Hà Nội (HAN)</div>
+                                        <div class="gray txt_14">Nội Bài</div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item__left">
+                                        <div class="flights">
+                                            <img src="images/icons/fly-to2.png" alt="">
+                                            <p><strong>2h55’</strong></p>
+                                        </div>
+                                    </div>
+                                    <div class="item__right border-none">
+                                        <div class="name">
+                                            <div class="logo"><img src="images/hang-bay/bamboo.png" alt=""></div>
+                                            <div class="hang">Bamboo Airways</div>
+                                            <p class="code">QH1629 / Airbus A320</p>
+                                            <div class="option">
+                                                <div class="tag">EA</div>
+                                                PTTK &nbsp;
+                                                <span class="tooltip-new">
+                                                    <svg class="icon-svg color-blue min">
+                                                        <use xlink:href="images/icons/icon.svg#info">
+                                                        </use>
+                                                    </svg>
+                                                    <div class="tooltip-content">Gói phổ thông tiết kiệm</div>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item__left">
+                                        <div class="bold txt_18">20:20</div>
+                                        <span class="date">28/7/2022</span>
+                                    </div>
+                                    <div class="item__right">
+                                        <div class="bold txt_18">Hà Nội (HAN)</div>
+                                        <div class="gray txt_14">Nội Bài</div>
+                                    </div>
+                                </div>
+                                <div class="detail">
+                                    <div class="txt_16 bold mb5">Thông tin khác</div>
+                                    <ul class="service gray">
+                                        <li>
+                                            <svg class="icon-svg">
+                                                <use xlink:href="images/icons/icon.svg#hanh-ly">
+                                                </use>
+                                            </svg> Hành lý xách tay 7kg. Hành lý ký gửi 20kg
+                                        </li>
+                                        <li>
+                                            <svg class="icon-svg">
+                                                <use xlink:href="images/icons/icon.svg#ticket">
+                                                </use>
+                                            </svg> Miễn phí đổi vé (thu chênh lệch tiền vé nếu có), thời hạn 3h so với giờ khởi hành.
+                                        </li>
+                                        <li>
+                                            <svg class="icon-svg">
+                                                <use xlink:href="images/icons/icon.svg#hanh-ly">
+                                                </use>
+                                            </svg> Hoàn bảo lưu tiền vé tối đa 180 ngày và tính phí theo chính sách hãng, thời hạn 24h so với giờ khởi hành.
+                                        </li>
+                                        <li>
+                                            <svg class="icon-svg">
+                                                <use xlink:href="images/icons/icon.svg#heart">
+                                                </use>
+                                            </svg> Ưu tiên chọn chỗ ngồi yêu thích
+                                        </li>
+                                        <li>
+                                            <svg class="icon-svg">
+                                                <use xlink:href="images/icons/icon.svg#ticket2">
+                                                </use>
+                                            </svg> Không đổi vé
+                                        </li>
+                                        <li>
+                                            <svg class="icon-svg">
+                                                <use xlink:href="images/icons/icon.svg#ticket">
+                                                </use>
+                                            </svg> Phí hoàn vé 500.000VND, phí bỏ chuyến 500.000VND
+                                        </li>
+                                        <li>
+                                            <svg class="icon-svg">
+                                                <use xlink:href="images/icons/icon.svg#ticket2">
+                                                </use>
+                                            </svg> Không hoàn vé
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+<!--POPUP xuất hóa đơn -->
+<div class="modal fade" id="myModal4">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header border-bottom pb-12">
+                <div class="txt_18"><strong>Xuất hoá đơn</strong></div>
+                <button type="button" class="close" data-dismiss="modal">×</button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="mb10 color-blue txt_16">Điều kiện xuất hoá đơn</div>
+                <div class="form-group">
+                    <label class="" for="exampleInputEmail1">Mã số thuế*</label>
+                    <div class="search-wrapper2 mb16 bg-white" style="width: 100%;">
+                        <input type="text" class="input_search" name="" value="" placeholder="Nhập mã số thuế">
+                        <button class="search-btn" type="submit">
+                            <svg class="icon-svg">
+                                <use xlink:href="images/icons/icon.svg#search"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    
+                </div>
+                <div class="form-group">
+                    <label class="" for="exampleInputEmail1">Tên công ty*</label>
+                    <input type="email" class="form-control" id="" placeholder="Nhập tên công ty">
+                </div>
+                <div class="form-group">
+                    <label class="" for="exampleInputEmail1">Tên công ty*</label>
+                    <input type="email" class="form-control" id="" placeholder="Nhập địa chỉ công ty">
+                </div>
+                <div class="form-group">
+                    <label class="" for="exampleInputEmail1">Email*</label>
+                    <input type="email" class="form-control" id="" placeholder="Nhập Email">
+                </div>
+                <label class="confir_res">
+                    Lưu thông tin xuất hoá đơn
+                    <input type="radio" name="inlineGoi" id="Goi">
+                    <span class="checkmark"></span>
+                </label>
+                <button type="submit" class="btn btn-default full size">Áp dụng</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--POPUP xuất hóa đơn -->
+<div class="modal fade" id="myModal5">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header border-bottom pb-12">
+                <div class="txt_18"><strong>Chi tiết đơn giá</strong></div>
+                <button type="button" class="close" data-dismiss="modal">×</button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">             
+                <div class="mb16 txt_16"><strong>Chi tiết chiều đi</strong></div>
+                <div class="bg-gray radius10 pd-16 txt_16 mb24">
+                    <ul>
+                        <li class="mb15 flex space-between gray">
+                            <div>Người lớn</div>
+                            <div>299.000 đ</div>
+                        </li>
+                        <li class="mb15 flex space-between gray">
+                            <div>
+                                Thuế &amp; phí sân bay
+                            </div>
+                            <div>616.000 đ</div>
+                        </li>
+                        <li class="mb15 flex space-between gray">
+                            <div>
+                                Phí dịch vụ
+                                <span class="tooltip-new">
+                                    <svg class="icon-svg color-blue min">
+                                        <use xlink:href="images/icons/icon.svg#info">
+                                        </use>
+                                    </svg>
+                                    <div class="tooltip-content">
+                                        Phí này giúp Mytour duy trì và nâng cao chất lượng dịch vụ như cải thiện dịch vụ khách hàng 24/7, nâng cấp trải nghiệm  ứng dụng và hỗ trợ hoàn hủy, mua thêm các dịch vụ sau đặt vé được tốt hơn
+                                    </div>
+                                </span>
+                            </div>
+                            <div>35.000 đ</div>
+                        </li>
+                    </ul>
+                    <div class="line-bottom mb16"></div>
+                    <ul class="mb0">
+                        <li class="flex space-between">
+                            <div class="bold gray">Tổng giá</div>
+                            <div class="bold">1.184.000 đ</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mb16 txt_16"><strong>Chi tiết chiều về</strong></div>
+                <div class="bg-gray radius10 pd-16 txt_16 mb24">
+                    <ul>
+                        <li class="mb15 flex space-between gray">
+                            <div>Người lớn</div>
+                            <div>299.000 đ</div>
+                        </li>
+                        <li class="mb15 flex space-between gray">
+                            <div>
+                                Thuế &amp; phí sân bay
+                            </div>
+                            <div>616.000 đ</div>
+                        </li>
+                        <li class="mb15 flex space-between gray">
+                            <div>
+                                Phí dịch vụ
+                                <span class="tooltip-new">
+                                    <svg class="icon-svg color-blue min">
+                                        <use xlink:href="images/icons/icon.svg#info">
+                                        </use>
+                                    </svg>
+                                    <div class="tooltip-content">
+                                        Phí này giúp Mytour duy trì và nâng cao chất lượng dịch vụ như cải thiện dịch vụ khách hàng 24/7, nâng cấp trải nghiệm  ứng dụng và hỗ trợ hoàn hủy, mua thêm các dịch vụ sau đặt vé được tốt hơn
+                                    </div>
+                                </span>
+                            </div>
+                            <div>35.000 đ</div>
+                        </li>
+                    </ul>
+                    <div class="line-bottom mb16"></div>
+                    <ul class="mb0">
+                        <li class="flex space-between">
+                            <div class="bold gray">Tổng giá</div>
+                            <div class="bold">1.184.000 đ</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mb15 flex space-between">
+                    <div>
+                        <strong class="txt_18">Tổng giá vé</strong>
+                        <div class="txt_12 gray">Đã bao gồm thuế, phí, VAT</div>
+                    </div>
+                    <div class="bold txt_18 color-green">2.392.720 đ</div>
+                </div>
+                <button type="submit" class="btn btn-default full size">Thanh toán</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--POPUP thêm hành lý -->
+<div class="modal fade" id="myModal6">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header border-bottom pb-12">
+                <div class="txt_18"><strong>Thêm hành lý ký gửi</strong></div>
+                <button type="button" class="close" data-dismiss="modal">×</button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="list-trip grid grid__2 mb16">
+                    <div class="trip-info align-center mb0 active">
+                        <div class="lbl mt0">Chiều đi</div>
+                        <div class="info">
+                            <div class="name txt_14 bold">Hà Nội (HAN) - Phú Quốc (PQC)</div>
+                        </div>
+                    </div>
+                    <div class="trip-info align-center mb0">
+                        <div class="lbl mt0 red">Chiều về</div>
+                        <div class="info">
+                            <div class="name txt_14 bold">Hà Nội (HAN) - Phú Quốc (PQC)</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gray mb10">Lựa chọn số lượng cân hành lý ký gửi </div>
+                <div class="form-group row mb10">
+                    <div class="col-6"><label class="mt10 black">DINH THANH BÌNH</label></div>
+                    <div class="col-6">
+                        <select class="select2" name="" id="select-price1" style="width: 100%;"></select>
+                    </div>
+                </div>
+                <div class="form-group row mb10">
+                    <div class="col-6"><label class="mt10 black">LOAN NGUYEN</label></div>
+                    <div class="col-6">
+                        <select class="select2" name="" id="select-price2" style="width: 100%;"></select>
+                    </div>
+                </div>
+                <div class="line-bottom mt20 mb24"></div>
+
+
+                <div class="flex align-center space-between">
+                    <div>Tổng </br><strong class="txt_16">297.400đ</strong></div>
+                    <button type="submit" class="btn btn-default">Áp dụng</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--POPUP Chọn số lượng -->
+<div class="modal fade bottom" id="myModal7">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header border-bottom pb-12">
+                <div class="txt_18"><strong>Hành khách</strong></div>
+                <button type="button" class="close" data-dismiss="modal">×</button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="flex mb16 space-between align-center">
+                    <div>Người lớn <span class="gray">(>12 tuổi)</span></div>
+                    <div class="sl_giohang">
+                        <div class="input-group-prepend">
+                            <button class="giam_sl" id="minus-btn">-</button>
+                        </div>
+                        <input type="text" id="qty_input" class="qty_input" value="1" min="1">
+                        <div class="input-group-prepend">
+                            <button class="tang_sl" id="plus-btn">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex mb16 space-between align-center">
+                    <div>Trẻ em <span class="gray">(2 - 11)</span></div>
+                    <div class="sl_giohang">
+                        <div class="input-group-prepend">
+                            <button class="giam_sl" id="minus-btn">-</button>
+                        </div>
+                        <input type="text" id="qty_input" class="qty_input" value="1" min="1">
+                        <div class="input-group-prepend">
+                            <button class="tang_sl" id="plus-btn">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex mb16 space-between align-center">
+                    <div>Em bé <span class="gray">(&#60;2 tuổi)</span></div>
+                    <div class="sl_giohang">
+                        <div class="input-group-prepend">
+                            <button class="giam_sl" id="minus-btn">-</button>
+                        </div>
+                        <input type="text" id="qty_input" class="qty_input" value="1" min="1">
+                        <div class="input-group-prepend">
+                            <button class="tang_sl" id="plus-btn">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid__2">
+                    <button type="submit" class="btn btn-default size">Chọn</button>
+                    <button type="submit" class="btn btn-default gray size">Hủy</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--POPUP lựa chọn ngày -->
+<div class="modal modal-select-date fade" id="myModal8">
+    <div class="modal-dialog full-height">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-top">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <svg class="icon-svg">
+                            <use xlink:href="images/icons/icon.svg#prev2"></use>
+                        </svg>
+                    </button>
+                    <div class="txt_16"><strong>Lựa chọn ngày</strong></div>
+                </div>
+                <div class="flex-date-to">
+                    <div class="go-to-day">
+                        <div>Ngày đi</div>
+                        <div class="flex">
+                            <div class="date">14</div>
+                            <div class="mounth">
+                                <div class="day">Thứ 4</div>
+                                <p>Tháng 4</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="icon-fly">
+                        <img src="images/icons/fly4.svg" alt="">
+                    </div>
+                    <div class="return-day">
+                        <div>Ngày về</div>
+                        <div class="flex">
+                            <div class="date">23</div>
+                            <div class="mounth">
+                                <div class="day">Thứ 5</div>
+                                <p>Tháng 4</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="calendar-custom slide-relative">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>T2</th>
+                                    <th>T3</th>
+                                    <th>T4</th>
+                                    <th>T5</th>
+                                    <th>T6</th>
+                                    <th>T7</th>
+                                    <th>CN</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="mounth">
+                                    <td colspan="7">Tháng 3, 2023</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="off">1</td>
+                                    <td class="off">2</td>
+                                    <td class="off">3</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>7</td>
+                                    <td>8</td>
+                                    <td>9</td>
+                                    <td class="today">10</td>
+                                    <td>11</td>
+                                    <td>12</td>
+                                </tr>
+                                <tr>
+                                    <td>13</td>
+                                    <td class="t-start">14</td>
+                                    <td class="t-range">15</td>
+                                    <td class="t-range">16</td>
+                                    <td class="t-range">17</td>
+                                    <td class="t-range">18</td>
+                                    <td class="t-range">19</td>
+                                </tr>
+                                <tr>
+                                    <td class="t-range">20</td>
+                                    <td class="t-range">21</td>
+                                    <td class="t-range">22</td>
+                                    <td class="t-end">23</td>
+                                    <td>24</td>
+                                    <td>25</td>
+                                    <td>26</td>
+                                </tr>
+                                <tr>
+                                    <td>27</td>
+                                    <td>28</td>
+                                    <td>29</td>
+                                    <td>30</td>
+                                    <td>31</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+
+                                <tr class="mounth">
+                                    <td colspan="7">Tháng 4, 2023</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="off">1</td>
+                                    <td class="off">2</td>
+                                    <td class="off">3</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>7</td>
+                                    <td>8</td>
+                                    <td>9</td>
+                                    <td>10</td>
+                                    <td>11</td>
+                                    <td>12</td>
+                                </tr>
+                                <tr>
+                                    <td>13</td>
+                                    <td>14</td>
+                                    <td>15</td>
+                                    <td>16</td>
+                                    <td>17</td>
+                                    <td>18</td>
+                                    <td>19</td>
+                                </tr>
+                                <tr>
+                                    <td>20</td>
+                                    <td>21</td>
+                                    <td>22</td>
+                                    <td>23</td>
+                                    <td>24</td>
+                                    <td>25</td>
+                                    <td>26</td>
+                                </tr>
+                                <tr>
+                                    <td>27</td>
+                                    <td>28</td>
+                                    <td>29</td>
+                                    <td>30</td>
+                                    <td>31</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="bg-gray mt20"><button type="submit" class="btn btn-default size full">Áp dụng</button></div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+<!--POPUP Đăng nhập , đăng ký  -->
+<div class="modal fade" id="myModal9">
+    <div class="modal-dialog" style="max-width: 440px;">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+                <ul class="nav nav-tabs-login" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Đăng nhập</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Tạo tài khoản</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                        <div class="form-default">
+                            <div class="form-group">
+                                <label>Địa chỉ Email</label>
+                                <div class="input-icon">
+                                    <svg class="icon-svg">
+                                        <use xlink:href="images/icons/icon.svg#Message"></use>
+                                    </svg>
+                                    <input type="text" class="form-control" placeholder="Nhập địa chỉ Email">
+                                </div>
+                                <div class="error mt5">Nhập lỗi thông tin</div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Mật khẩu</label>
+                                <div class="relative password-wrap input-icon">
+                                    <svg class="icon-svg">
+                                        <use xlink:href="images/icons/icon.svg#Lock"></use>
+                                    </svg>
+                                    <input id="password-field" type="password" name="password" class="form-control" placeholder="Nhập mật khẩu">
+                                    <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                                </div>
+                            </div>
+                            <div class="form-group text-right">
+                                <a class="medium" href="#">Quên mật khẩu?</a>
+                            </div>
+                            <button type="submit" class="btn-default full big">Đăng nhập</button>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tabs-2" role="tabpanel">
+                        <div class="form-default">
+                            <div class="form-group">
+                                <label>Họ & tên</label>
+                                <div class="input-icon">
+                                    <svg class="icon-svg">
+                                        <use xlink:href="images/icons/icon.svg#user"></use>
+                                    </svg>
+                                    <input type="text" class="form-control" placeholder="Nhập Họ & tên">
+                                </div>
+                                <div class="error mt5">Nhập lỗi thông tin</div>
+                            </div>
+                            <div class="form-group">
+                                <label>Địa chỉ Email</label>
+                                <div class="input-icon">
+                                    <svg class="icon-svg">
+                                            <use xlink:href="images/icons/icon.svg#Message"></use>
+                                        </svg>
+                                    <input type="text" class="form-control" placeholder="Nhập địa chỉ Email">
+                                </div>
+                                <div class="error mt5">Nhập lỗi thông tin</div>
+                            </div>
+                            <div class="form-group">
+                                <label>Số điện thoại</label>
+                                <div class="input-icon">
+                                    <svg class="icon-svg">
+                                        <use xlink:href="images/icons/icon.svg#phone2"></use>
+                                    </svg>
+                                    <input type="text" class="form-control" placeholder="Nhập Số điện thoại">
+                                </div>
+                                <div class="error mt5">Nhập lỗi thông tin</div>
+                            </div>
+                            <div class="form-group">
+                                <label>Mật khẩu</label>
+                                <div class="relative password-wrap input-icon">
+                                    <svg class="icon-svg">
+                                        <use xlink:href="images/icons/icon.svg#Lock"></use>
+                                    </svg>
+                                    <input id="password-field" type="password" name="password" class="form-control" placeholder="Nhập mật khẩu từ 6 đến 32 ký tự">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Nhập lại mật khẩu</label>
+                                <div class="relative password-wrap input-icon">
+                                    <svg class="icon-svg">
+                                        <use xlink:href="images/icons/icon.svg#Lock"></use>
+                                    </svg>
+                                    <input id="password-field" type="password" name="password" class="form-control" placeholder="Nhập lại mật khẩu">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="confir_res">
+                                    Nhận các thông tin & chương trình khuyến mãi qua email
+                                    <input type="checkbox" name="inlineGoi2" id="Goi1">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="form-group"><button type="submit" class="btn-default full big">Đăng nhập</button></div>
+                            <div class="text-center gray">
+                                Khi bạn nhấn Đăng ký, bạn đồng ý thực hiện mọi giao dịch mua bán theo <a href="#" class="color-blue">điều kiện sử dụng và chinh sách của Chúng tôi</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <!--Footer-->
+    <footer class="adv-footer">
+        <div class="adv-footer__top">
+            <div class="head">
+                <a class="logo" href="#"><img src="images/graphics/logo-white.svg" alt=""></a>
+                <h3 class="lead">CÔNG TY CỔ PHẦN THƯƠNG MẠI & DỊCH VỤ QUỐC TẾ ĐẠI VIỆT</h3>
+            </div>
+            <div class="border-bottom mb12">
+                <p><b>Trụ sở chính:</b> Tầng 6, tòa nhà Sannam, số 78 phố Duy Tân, P. Dịch Vọng Hậu, Q. Cầu Giấy, TP. Hà Nội </p>
+                <p><b>Tổng đài kinh doanh:</b> 0936.191.192</p>
+                <p><b>Tổng đài chăm sóc khách hàng:</b> 0326.333.333</p>
+                <p><b>Trụ sở chính:</b> 0902.161.162</p>
+            </div>
+            <div class="border-bottom mb12">
+                <div class="mb10 bold color-white">Văn phòng giao dịch</div>
+                <p class="tiny-font">
+                    <span class="icon">
+                        <svg class="icon-svg">
+                            <use xlink:href="images/icons/icon.svg#address"></use>
+                        </svg>
+                    </span>
+                    <b>Hà Nội:</b> Số 289A Khuất Duy Tiến, Cầu Giấy, Hà Nội
+                </p>
+                <p class="tiny-font">
+                    <span class="icon">
+                        <svg class="icon-svg">
+                            <use xlink:href="images/icons/icon.svg#address"></use>
+                        </svg>
+                    </span>
+                    <b>Phú Quốc CS1:</b> ShopHouse số 89 đường An Phúc, Grandworld Phú Quốc
+                </p>
+                <p class="tiny-font">
+                    <span class="icon">
+                        <svg class="icon-svg">
+                            <use xlink:href="images/icons/icon.svg#address"></use>
+                        </svg>
+                    </span>
+                    <b>Phú Quốc CS2:</b> Số 72 Trần Hưng Đạo, Phường Dương Đông, Thành Phố Phú Quốc
+                </p>
+                <p class="tiny-font">
+                    <span class="icon">
+                        <svg class="icon-svg">
+                            <use xlink:href="images/icons/icon.svg#address"></use>
+                        </svg>
+                    </span>
+                    <b>Hồ Chí Minh:</b> Số 51 Võ Văn Tần, P.Võ Thị Sáu, Q3
+                </p>
+            </div>
+            <div class="flex-social mb15">
+                <div class="bold color-white">Theo dõi chúng tôi</div>
+                <div class="social-list">
+                    <div class="social-fb social-item">
+                        <a href="https://www.facebook.com/DV.Adavigo" target="_blank">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </div>
+                    <div class="social-yt social-item">
+                        <a href="https://www.youtube.com/channel/UCuzau3T9-toUO21cxQkn2qQ">
+                            <i class="fa fa-youtube-play"></i>
+                        </a>
+                    </div>
+                    <div class="social-zl social-item">
+                        <a href="https://zalo.me/">
+                            <img src="images/icons/zalo.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <p>Số chứng nhận đăng ký kinh doanh: 108008526 cấp bởi sở kế hoạch và đầu tưthành phố Hà Nội ngày 03/10/2017</p>
+
+
+        </div>
+        <div class="adv-footer__bottom">
+            <p>© 2022 Adavigo, Inc. All rights reserved</p>
+            <div class="faith-images">
+                <img class="trade" src="images/graphics/thong-bao-bo-cong-thuong.svg" alt="">
+                <img class="dmca" src="images/graphics/dmca.svg" alt="">
+            </div>
+            <p><small>Chấp nhận thanh thanh toán</small></p>
+            <p class="ft-payment-method">
+                <i class="fa fa-credit-card"></i>
+                <i class="fa fa-cc-discover"></i>
+                <i class="fa fa-cc-mastercard"></i>
+                <i class="fa fa-cc-visa"></i>
+                <i class="fa fa-cc-paypal"></i>
+            </p>
+            <p><small>Xuất hóa đơn VAT theo yêu cầu khách hàng</small></p>
+        </div>
+    </footer>
+
+    <!--End Footer-->
+
+    <!--Jquery lib-->
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/select2.min.js"></script>
+    <script type="text/javascript" src="js/moment.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/daterangepicker.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <!-- build:script -->
+    
+<script type="text/javascript" src="js/slider-range.js"></script>
+<script type="text/javascript" src="js/t-datepicker.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.t-datepicker').tDatePicker({});
+    });
+
+    // Data select2 Price
+    $(function() {
+        // data user 1
+        var dataPrice1 = [{
+            id: 1,
+            kg: "0kg",
+            vnd: "0 đ",
+        }, {
+            id: 2,
+            kg: "15kg",
+            vnd: "+ 76.000 đ",
+        }, {
+            id: 3,
+            kg: "20kg",
+            vnd: "+ 76.000 đ",
+        }, {
+            id: 4,
+            kg: "25kg",
+            vnd: "+ 76.000 đ",
+        }, ];
+        // data user 2
+        var dataPrice2 = [{
+            id: 1,
+            kg: "0kg",
+            vnd: "0 đ",
+        }, {
+            id: 2,
+            kg: "15kg",
+            vnd: "+ 76.000 đ",
+        }, {
+            id: 3,
+            kg: "20kg",
+            vnd: "+ 76.000 đ",
+        }, {
+            id: 4,
+            kg: "25kg",
+            vnd: "+ 76.000 đ",
+        }, ];
+
+        $("#select-price1").select2({
+            minimumResultsForSearch: -1,
+            data: dataPrice1,
+            escapeMarkup: function(markup) {
+                return markup;
+            },
+            templateResult: function(data) {
+                return `<div class="flex space-between align-center"><span>${data.kg}</span><span class="color-green">${data.vnd}</span></div>`;
+            },
+            templateSelection: function(data) {
+                return `<div class="flex space-between align-center"><span>${data.kg}</span><span class="color-green">${data.vnd}</span></div>`;
+            },
+        });
+
+        $("#select-price2").select2({
+            minimumResultsForSearch: -1,
+            data: dataPrice2,
+            escapeMarkup: function(markup) {
+                return markup;
+            },
+            templateResult: function(data) {
+                return `<div class="flex space-between align-center"><span>${data.kg}</span><span class="color-green">${data.vnd}</span></div>`;
+            },
+            templateSelection: function(data) {
+                return `<div class="flex space-between align-center"><span>${data.kg}</span><span class="color-green">${data.vnd}</span></div>`;
+            },
+        });
+
+
+    });
+</script>
+
+
+</body>
+
+</html>

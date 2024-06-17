@@ -1,0 +1,248 @@
+<!-- build:title -->Adavido
+<!-- /build:title -->
+<!-- build:head -->
+<link href="css/user.css" rel="stylesheet" type="text/css" />
+<!-- /build:head -->
+<!-- build:content -->
+
+<div class="container mt10">
+    <div class="flex align-center space-between">
+        <h2 class="title txt_24 bold mb10">Thông tin tài khoản</h2>
+        <ol class="breadcrumb mb10">
+            <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Tài khoản</li>
+        </ol>
+    </div>
+</div>
+
+<section class="section-main clearfix">
+    <div class="container mt10">
+        <div class="user_management flex">
+            <div class="sidebar1">
+                <div class="bg-white pd-20 radius10">
+                    <header>
+                        <div class="avatar">
+                            <img src="images/graphics/thumb_1x1.jpg">
+                        </div>
+                        <div class="info">
+                            <span>Xin chào bạn</span>
+                            <h4>Lê Văn Cường</h4>
+                        </div>
+                    </header>
+                    <ul class="lever1">
+                        <li>
+                            <a href="/" title="">
+                                <svg class="icon-svg">
+                                <use xlink:href="images/icons/icon.svg#user"></use>
+                            </svg> Chỉnh sửa hồ sơ
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="/" title="">
+                                <svg class="icon-svg">
+                                <use xlink:href="images/icons/icon.svg#Lock"></use>
+                            </svg> Thay đổi mật khẩu
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/" title="">
+                                <svg class="icon-svg">
+                                <use xlink:href="images/icons/icon.svg#don-hang"></use>
+                            </svg> Quản lý đơn hàng
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/" title="">
+                                <svg class="icon-svg">
+                                <use xlink:href="images/icons/icon.svg#notifi"></use>
+                            </svg>Thông báo của tôi
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="/" title="">
+                                <svg class="icon-svg">
+                                    <use xlink:href="images/icons/icon.svg#w-hoptac"></use>
+                                </svg> Tài khoản Affiliate của tôi
+                            </a>
+                            <ul class="lever2">
+                                <li>
+                                    <a href="">Tạo link giới thiệu</a>
+                                    <a href="">Quản lý đơn hàng Affiliate</a>
+                                    <a href="">Thông tin thanh toán</a>
+                                    <a href="">Đối soát hoa hồng</a>
+                                    <a href="">Giới thiệu về Adavigo</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="sidebar2">
+                <!-- Thay mật khẩu -->
+                <div class="bg-white pd-20 radius10 mb20">
+                    <div class="bold txt_20 mb16">Thay đổi mật khẩu</div>
+                    <div class="form-default">
+                        <div class="form-group row mb16">
+                            <div class="col-md-3"><label class="gray mt10">Mật khẩu cũ</label></div>
+                            <div class="col-md-6">
+                                <div class="relative password-wrap input-icon">
+                                    <svg class="icon-svg">
+                                        <use xlink:href="images/icons/icon.svg#Lock"></use>
+                                    </svg>
+                                    <input id="password-field" type="password" name="password" class="form-control" placeholder="Nhập mật khẩu cũ">
+                                    <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row mb16">
+                            <div class="col-md-3"><label class="gray mt10">Mật khẩu mới</label></div>
+                            <div class="col-md-6">
+                                <div class="relative password-wrap input-icon">
+                                    <svg class="icon-svg">
+                                        <use xlink:href="images/icons/icon.svg#Lock"></use>
+                                    </svg>
+                                    <input id="password-field" type="password" name="password" class="form-control" placeholder="Nhập mật khẩu mới">
+                                    <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row mb16">
+                            <div class="col-md-3"><label class="gray mt10">Xác nhận mật khẩu mới</label></div>
+                            <div class="col-md-6">
+                                <div class="relative password-wrap input-icon">
+                                    <svg class="icon-svg">
+                                        <use xlink:href="images/icons/icon.svg#Lock"></use>
+                                    </svg>
+                                    <input id="password-field" type="password" name="password" class="form-control" placeholder="Nhập lại mật khẩu mới">
+                                    <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line-bottom mb16"></div>
+                        <button type="submit" class="btn-default gray" style="height: 36px">Thay đổi mật khẩu</button>
+                        <button type="submit" class="btn-default ml-2" style="height: 36px">Thay đổi mật khẩu</button>
+                    </div>
+                </div>
+
+                <!-- Lấy lại mật khẩu -->
+                <div class="bg-white pd-20 radius10 mb20">
+                    <div class="bold txt_20 mb16">Lấy lại mật khẩu</div>
+                    <p>Nếu bạn chưa có tài khoản hãy <a href="#" class="color-blue">Đăng ký</a></p>
+                    <div class="form-default">
+                        <div class="form-group row mb16">
+                            <div class="col-md-3"><label class="gray mt10">Nhập địa chỉ Email</label></div>
+                            <div class="col-md-6">
+                                <div class="input-icon">
+                                    <svg class="icon-svg">
+                                        <use xlink:href="images/icons/icon.svg#Message"></use>
+                                    </svg>
+                                    <input type="text" class="form-control" placeholder="Nhập địa chỉ Email">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row mb16">
+                            <div class="col-md-3"><label class="gray mt10">Mật khẩu mới</label></div>
+                            <div class="col-md-6">
+                                <div class="relative password-wrap input-icon">
+                                    <svg class="icon-svg">
+                                        <use xlink:href="images/icons/icon.svg#Lock"></use>
+                                    </svg>
+                                    <input id="password-field" type="password" name="password" class="form-control" placeholder="Nhập mật khẩu mới">
+                                    <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row mb16">
+                            <div class="col-md-3"><label class="gray mt10">Xác nhận mật khẩu mới</label></div>
+                            <div class="col-md-6">
+                                <div class="relative password-wrap input-icon">
+                                    <svg class="icon-svg">
+                                        <use xlink:href="images/icons/icon.svg#Lock"></use>
+                                    </svg>
+                                    <input id="password-field" type="password" name="password" class="form-control" placeholder="Nhập lại mật khẩu mới">
+                                    <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line-bottom mb16"></div>
+                        <button type="submit" class="btn-default gray" style="height: 36px">Nhập lại</button>
+                        <button type="submit" class="btn-default ml-2" style="height: 36px">Xác nhận</button>
+                    </div>
+                </div>
+                <!--POPUP Quên mật khẩu  -->
+                <div class="modal-dialog mb20" style="max-width: 500px;">
+                    <div class="modal-content">
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">Quên mật khẩu</h4>
+                            <button type="button" class="close" data-dismiss="modal">×</button>
+                        </div>
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <div class="form-default">
+                                <div class="form-group">
+                                    <label>Địa chỉ Email</label>
+                                    <div class="input-icon">
+                                        <svg class="icon-svg">
+                                                    <use xlink:href="images/icons/icon.svg#Message"></use>
+                                                </svg>
+                                        <input type="text" class="form-control" placeholder="Nhập địa chỉ Email">
+                                    </div>
+                                    <div class="error mt5">Nhập lỗi thông tin</div>
+                                </div>
+                                <button type="submit" class="btn-default full big mb10">Xác nhận</button>
+                                <button type="submit" class="btn-default full gray big">Quay lại</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--POPUP Thông báo lấy lại mật khẩu thành công  -->
+                <div class="modal-dialog mb20" style="max-width: 500px;">
+                    <div class="modal-content">
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">Lấy lại mật khẩu</h4>
+                            <button type="button" class="close" data-dismiss="modal">×</button>
+                        </div>
+                        <!-- Modal body -->
+                        <div class="modal-body center">
+                            <div class="form-default">
+                                <p class="mb15"><img src="images/icons/tam-khoa.png"></p>
+                                <p>Thông tin thay đổi mật khẩu đã được gửi tới Email của bạn. Vui lòng chọn vào đường dẫn và tiến hành thay đổi mật khẩu tại website</p>
+                                <button type="submit" class="btn-default full big">Quay về trang chủ</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<span class="notifi-success fixed">
+    <img src="images/graphics/success.png" alt="">
+    Thay đổi mật khẩu thành công
+</span>
+<!-- /build:content -->
+<!-- build:script2 -->
+<script>
+    $(".toggle-password").click(function() {
+        $(this).toggleClass("fa-eye fa-eye-slash");
+        var input = $($(this).attr("toggle"));
+        if (input.attr("type") == "password") {
+            input.attr("type", "text");
+        } else {
+            input.attr("type", "password");
+        }
+    });
+</script>
+<!-- /build:script2 -->
