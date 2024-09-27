@@ -4259,3 +4259,110 @@
         }
     }
 }
+
+// bảng giá
+.tab-banggia{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    li{
+        color: #698096;
+        border-radius: 4px;
+        padding: 4px 16px;
+        background: #F1F5F9;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 150%;
+        a{
+            color: #698096;
+        }
+        &.active{
+            background: #070BA0;
+            color: #fff;
+            a{
+                color: #fff;
+            }
+        }
+    }
+}
+.tb-banggia{
+    border-radius: 10px 10px 0px 0px;
+   
+    width: 100%;
+    th{
+        color:  #698096;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 150%;
+        background:  #F1F5F9;
+        text-align: center;
+        br{
+            display: none;
+        }
+        @media (max-width: 600px) {
+            font-weight: bold;
+            font-size: 12px;
+            text-align: center !important;
+            br{display: block;}
+        }
+    }
+    tbody{
+        tr:not(:first-child){
+            border-top: 1px solid #E3EBF3;
+        }
+    }
+    td{
+        text-align: center;
+        color:#00264D;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 150%;
+    }
+    th,td{
+        padding: 8px 12px;
+        @media (max-width: 600px) {
+            padding: 8px 5px;
+            font-size: 13px;
+        }
+        &:first-child{
+            text-align: left;
+        }
+        &:last-child{
+            text-align: right;
+        }
+    }
+    .hang-bay{
+        color:  #698096;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 150%; 
+        img{
+            display: block;
+            margin: auto;
+            height: 25px;
+            object-fit: contain;
+        }
+        @media (max-width: 600px) {
+            span{
+                display: none;
+            }
+        }
+    }
+    .price{
+        color:  #00A86B;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 120%; 
+    }
+    .btn{
+        border-radius: 10px;
+        background: #FFE9DD;
+        padding: 8px 24px;
+        color: #FF5B00;
+        font-size: 14px;
+        font-weight: 600;
+        @media (max-width: 600px) {
+            padding: 8px;
+        }
+    }
+}
